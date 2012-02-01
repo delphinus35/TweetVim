@@ -61,28 +61,28 @@ syntax match tweetvim_appendix_block /\]\]/ contained conceal
 "highlight uiki_title2 guifg=orange
 
 "highlight uiki_strong guifg=#FF80FF
-highlight tweetvim_title guifg=#bde682
-highlight tweetvim_status_id  guifg=#444444
-highlight tweetvim_created_at guifg=gray
-highlight tweetvim_screen_name guifg=#bde682
-highlight tweetvim_at_screen_name guifg=#bde682
-highlight tweetvim_link guifg=#80a0ff
+highlight tweetvim_title guifg=#bde682 ctermfg=150
+highlight tweetvim_status_id  guifg=#444444 ctermfg=237
+highlight tweetvim_created_at guifg=gray ctermfg=249
+highlight tweetvim_screen_name guifg=#bde682 ctermfg=150
+highlight tweetvim_at_screen_name guifg=#bde682 ctermfg=150
+highlight tweetvim_link guifg=#80a0ff ctermfg=111
 
-highlight tweetvim_hash_tag guifg=yellow
+highlight tweetvim_hash_tag guifg=yellow ctermfg=196
 
-highlight tweetvim_separator guifg=#444444
-highlight tweetvim_separator_title guifg=#444444
-highlight tweetvim_new_separator guifg=orange gui=undercurl
+highlight tweetvim_separator guifg=#444444 ctermfg=237
+highlight tweetvim_separator_title guifg=#444444 ctermfg=237
+highlight tweetvim_new_separator guifg=orange gui=undercurl ctermfg=208 cterm=underline
 
-highlight tweetvim_star guifg=yellow
-highlight tweetvim_reload guifg=orange
-highlight tweetvim_rt_count guifg=orange
-highlight tweetvim_rt_over  guifg=orange
+highlight tweetvim_star guifg=yellow ctermfg=196
+highlight tweetvim_reload guifg=orange ctermfg=208
+highlight tweetvim_rt_count guifg=orange ctermfg=208
+highlight tweetvim_rt_over  guifg=orange ctermfg=208
 
 "highlight tweetvim_reply gui=underline
-highlight tweetvim_reply guifg=orange
+highlight tweetvim_reply guifg=orange ctermfg=208
 
-highlight tweetvim_appendix guifg=#616161
+highlight tweetvim_appendix guifg=#616161 ctermfg=240
 
 let b:current_syntax = 'tweetvim'
 
