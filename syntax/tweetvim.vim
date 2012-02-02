@@ -68,7 +68,7 @@ highlight tweetvim_screen_name guifg=#bde682 ctermfg=150
 highlight tweetvim_at_screen_name guifg=#bde682 ctermfg=150
 highlight tweetvim_link guifg=#80a0ff ctermfg=111
 
-highlight tweetvim_hash_tag guifg=yellow ctermfg=196
+highlight tweetvim_hash_tag guifg=yellow ctermfg=226
 
 highlight tweetvim_separator guifg=#444444 ctermfg=237
 highlight tweetvim_separator_title guifg=#444444 ctermfg=237
