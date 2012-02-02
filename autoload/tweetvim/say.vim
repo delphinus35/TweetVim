@@ -28,8 +28,6 @@ function! tweetvim#say#open(...)
 
   let &filetype = 'tweetvim_say'
   startinsert!
-
-  setlocal nomodified
 endfunction
 
 function! tweetvim#say#count()
