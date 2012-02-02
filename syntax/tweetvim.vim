@@ -61,52 +61,46 @@ syntax match tweetvim_appendix_block /\]\]/ contained conceal
 "highlight uiki_title2 guifg=orange
 
 "highlight uiki_strong guifg=#FF80FF
-highlight tweetvim_title guifg=#bde682
-highlight tweetvim_status_id  guifg=#444444
-highlight tweetvim_created_at guifg=gray
-highlight tweetvim_screen_name guifg=#bde682
-highlight tweetvim_at_screen_name guifg=#bde682
-highlight tweetvim_link guifg=#80a0ff
+"highlight tweetvim_title guifg=#bde682
+"highlight tweetvim_status_id  guifg=#444444
+"highlight tweetvim_created_at guifg=gray
+"highlight tweetvim_screen_name guifg=#bde682
+"highlight tweetvim_at_screen_name guifg=#bde682
+"highlight tweetvim_link guifg=#80a0ff
 
-highlight tweetvim_hash_tag guifg=yellow
+hi def link tweetvim_title Title
+hi def link tweetvim_status_id Special
+hi def link tweetvim_created_at NonText
+hi def link tweetvim_screen_name String
+hi def link tweetvim_at_screen_name String
+hi def link tweetvim_link Underlined
 
-highlight tweetvim_separator guifg=#444444
-highlight tweetvim_separator_title guifg=#444444
-highlight tweetvim_new_separator guifg=orange gui=undercurl
+"highlight tweetvim_hash_tag guifg=yellow
 
-highlight tweetvim_star guifg=yellow
-highlight tweetvim_reload guifg=orange
-highlight tweetvim_rt_count guifg=orange
-highlight tweetvim_rt_over  guifg=orange
+"highlight tweetvim_separator guifg=#444444
+"highlight tweetvim_separator_title guifg=#444444
+"highlight tweetvim_new_separator guifg=orange gui=undercurl
+
+"highlight tweetvim_star guifg=yellow
+"highlight tweetvim_reload guifg=orange
+"highlight tweetvim_rt_count guifg=orange
+"highlight tweetvim_rt_over  guifg=orange
 
 "highlight tweetvim_reply gui=underline
-highlight tweetvim_reply guifg=orange
+"highlight tweetvim_reply guifg=orange
 
-highlight tweetvim_appendix guifg=#616161
+"highlight tweetvim_appendix guifg=#616161
 
-if &t_Co > 255
-    highlight tweetvim_title ctermfg=150
-    highlight tweetvim_status_id  ctermfg=237
-    highlight tweetvim_created_at ctermfg=249
-    highlight tweetvim_screen_name ctermfg=150
-    highlight tweetvim_at_screen_name ctermfg=150
-    highlight tweetvim_link ctermfg=111
-
-    highlight tweetvim_hash_tag ctermfg=226
-
-    highlight tweetvim_separator ctermfg=237
-    highlight tweetvim_separator_title ctermfg=237
-    highlight tweetvim_new_separator ctermfg=208 cterm=underline
-
-    highlight tweetvim_star ctermfg=196
-    highlight tweetvim_reload ctermfg=208
-    highlight tweetvim_rt_count ctermfg=208
-    highlight tweetvim_rt_over  ctermfg=208
-
-    highlight tweetvim_reply ctermfg=208
-
-    highlight tweetvim_appendix ctermfg=240
-endif
+hi def link tweetvim_hash_tag Constant
+hi def link tweetvim_separator Ignore
+hi def link tweetvim_separator_title Ignore
+hi def link tweetvim_new_separator Comment
+hi def link tweetvim_star Conditional
+hi def link tweetvim_reload Constant
+hi def link tweetvim_rt_count Question
+hi def link tweetvim_rt_over Question
+hi def link tweetvim_reply Delimiter
+hi def link tweetvim_appendix Comment
 
 let b:current_syntax = 'tweetvim'
 
